@@ -29,10 +29,10 @@
 
 ```bash
 # 1. 添加本市场（GitHub）
-/plugin marketplace add <your-org>/ctxloom
+/plugin marketplace add lihu-001/ctxloom
 
-# 也支持任意 git 地址：
-# /plugin marketplace add https://your-git-host/.../ctxloom.git
+# 也支持完整 git 地址：
+# /plugin marketplace add https://github.com/lihu-001/ctxloom.git
 
 # 2. 安装插件
 /plugin install ctxloom@ctxloom
