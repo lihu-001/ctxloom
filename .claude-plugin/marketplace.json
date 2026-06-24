@@ -9,7 +9,7 @@
       "name": "ctxloom",
       "source": "./plugins/ctxloom",
       "description": "以上下文工程为核心的完整研发工作流：0–6 串起初始化→需求→设计→计划→执行→提交→复盘，外加 bugfix 并行修复线；所有过程知识沉淀进 .context/ 活文档与规则库/经验库，让项目越做越聪明。",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "lihu"
       }
