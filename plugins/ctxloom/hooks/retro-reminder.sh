@@ -44,8 +44,8 @@ for p in paths:
         continue
     seen.add(p)
     norm = p.replace('\\\\', '/')
-    # 只校验 .context/requirements 或 .context/designs 下的 .md 活文档
-    if not re.search(r'/\.context/(requirements|designs)/', norm):
+    # 只校验 .ctxloom/requirements 或 .ctxloom/designs 下的 .md 活文档
+    if not re.search(r'/\.ctxloom/(requirements|designs)/', norm):
         continue
     if not norm.endswith('.md') or norm.endswith('/README.md'):
         continue
@@ -64,7 +64,7 @@ rm -f "$FLAG"
 # 注意：Stop hook 的「纯 stdout + 退出码 0」只会进 debug log，用户和 Claude 都看不到。
 # 必须用 hookSpecificOutput.additionalContext 把提醒注入到 Claude 上下文，它才能看到并据此判断
 # （additionalContext 为非阻断方式；配合开头的 stop_hook_active 判断，不会造成死循环）。
-msg="[ctxloom] 本轮修改了文件。请判断是否需要调用 6-retrospective，将规则或经验沉淀到 .context/ 或 memory；若本次没有值得沉淀的内容，直接结束即可，不必强凑。"
+msg="[ctxloom] 本轮修改了文件。请判断是否需要调用 6-retrospective，将规则或经验沉淀到 .ctxloom/ 或 memory；若本次没有值得沉淀的内容，直接结束即可，不必强凑。"
 if [[ -n "$missing" ]]; then
   msg="[ctxloom] 注意：本轮改动的需求/设计活文档（${missing}）末尾未发现评审小节（需求评审报告 / 设计评审记录）。按 1-requirements-analysis / 2-technical-design 的硬性规则，文档落盘后必须经独立评审并追加评审小节才算定稿——请确认是否漏掉了评审步骤。${msg}"
 fi
