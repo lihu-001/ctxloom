@@ -1,2 +1,8 @@
 .DS_Store
 Thumbs.db
+
+# 优化过程产物，不入库
+/optimization-report.md
+/final-optimization-report.md
+/complete-optimization-report.md
+/plans/
