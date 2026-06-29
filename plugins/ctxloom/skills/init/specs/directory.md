@@ -5,9 +5,8 @@
 ```
 .ctxloom/
     README.md                        # 文件：本目录的导览与使用约定（含 Frontmatter 规范，唯一可带 okf_version 的文件）
-    log.md                           # 文件：上下文目录的演进日志（可选，记结构与架构级变更，最新在前）
     project.md                       # 文件：项目背景、技术栈、整体架构（架构权威来源）
-    learnings.md                     # 文件：踩坑经验与临时约定的沉淀（经验回流，6 追加）
+    learnings.md                     # 文件（已废弃）：原经验沉淀区，已合并进 rules/；旧文件可保留作历史参考
     pending.md                       # 文件：待确认问题的暂存区（开放问题，确认后清理）
     rules/                           # 文件夹：编码前参考的规则基线
         README.md                    # 文件：本目录用途说明 + 各规则文件导引
@@ -41,4 +40,4 @@
 
 ## 目录契约的单一来源
 
-上面这棵目录树是整套 0–6 技能流程的**权威定义**。后续技能（`1-requirements-analysis` 到 `6-retrospective`）在落盘、读取规则与记忆时会引用其中的具体路径（如 `requirements/<功能>.md`、`rules/build.md`、`rules/security.md`、`learnings.md`）。若要调整结构（重命名或移动目录），**以这里为准**，并同步更新引用这些路径的技能，避免契约在多处漂移。
+上面这棵目录树是整套 0–6 技能流程的**权威定义**。后续技能（`1-requirements-analysis` 到 `6-retrospective`）在落盘、读取规则与记忆时会引用其中的具体路径（如 `requirements/<功能>.md`、`rules/build.md`、`rules/security.md`）。若要调整结构（重命名或移动目录），**以这里为准**，并同步更新引用这些路径的技能，避免契约在多处漂移。

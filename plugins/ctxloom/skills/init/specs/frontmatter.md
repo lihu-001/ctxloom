@@ -25,7 +25,6 @@ frontmatter 用 `---` 成对包裹，置于文件最顶部。字段分三档：
 |---|---|---|---|
 | `project.md` | `Project` | —— | 项目背景与架构权威源 |
 | `rules/*.md` | `Rule` | `downstream`（可选，如 `[3, 4, 5]`） | 标明此规则是下游哪些技能的强依赖，便于精确定位 |
-| `learnings.md` | `Learnings` | —— | 经验沉淀区 |
 | `pending.md` | `Pending` | —— | 待确认问题暂存 |
 | `requirements/<功能>.md` | `Requirement` | `feature`、`status`、`resource` | 见下 |
 | `designs/<功能>.md` | `Design` | `feature`、`status` | 见下 |
